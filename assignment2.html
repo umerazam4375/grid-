@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+            .item:nth-child(1) {
+            grid-area: area1;
+            border: 3px solid red;
+            background-color: green;
+           
+        }
+        
+        .item:nth-child(2) {
+            grid-area: area2;
+            border: 3px solid red;
+            background-color: purple;
+            
+        }
+
+            .item:nth-child(3) {
+                grid-area: area3;
+                border: 3px solid red;
+                background-color:sandybrown;
+               
+            }
+            .item:nth-child(4) {
+                grid-area: area4;
+                border: 3px solid red;
+                background-color: deeppink;
+               
+            }
+            .item:nth-child(5) {
+                grid-area: area5;
+                border: 3px solid red;
+                background-color: mediumspringgreen;
+               
+            }
+            .item:nth-child(6) {
+                grid-area: area6;
+                border: 3px solid red;
+                background-color:deepskyblue;
+               
+            }
+            #parent {
+                height: 60vh;
+                width: 50vw;
+                display: grid;
+                background-color: cadetblue;
+                grid-template-rows: 3;
+                grid-template-columns: 3;
+                grid-template:
+                 "area1 area2 area3"
+                  "area4 area5 area5"
+                   "area6 area5 area5"
+            
+            }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+
+</html>
